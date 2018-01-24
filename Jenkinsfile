@@ -5,7 +5,7 @@ properties([
 def test_branches = ["development", "master", "more-jenkins"]
 def publish_branches = ["development", "master"]
 def deploy_branches = ["development"]
-def test_rpc = true
+def test_rpc = false
 
 stage('Build jars') {
   node('docker') {
